@@ -21,7 +21,7 @@ type GameVal struct {
 var game GameVal
 
 func (gameVal *GameVal) SetNumbers(data Numbers) {
-	(*gameVal).numbers = data
+	gameVal.numbers = data
 }
 
 type any interface{}
