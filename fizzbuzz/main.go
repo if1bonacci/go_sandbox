@@ -26,8 +26,10 @@ func (gameVal *GameVal) SetNumbers(data Numbers) {
 
 type Item interface{}
 
+type ResultMap map[CallNumber]Item
+
 func playGame() {
-	resMap := make(map[CallNumber]Item, len(game.numbers))
+	resMap := make(ResultMap, len(game.numbers))
 
 	for _, number := range game.numbers {
 		if (number%3 == 0) && (number%5 == 0) {
