@@ -24,9 +24,9 @@ func (gameVal *GameVal) SetNumbers(data Numbers) {
 	(*gameVal).numbers = data
 }
 
-type Item interface{}
+type any interface{}
 
-type ResultMap map[CallNumber]Item
+type ResultMap map[CallNumber]any
 
 func playGame() {
 	resMap := make(ResultMap, len(game.numbers))
