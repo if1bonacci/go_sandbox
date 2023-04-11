@@ -51,5 +51,8 @@ func main() {
 	numbers = append(numbers, 1, 2, 3, 4, 5, 6, 7, 8, 15)
 	game.SetNumbers(numbers)
 
+	sNum := numbers[len(numbers)-1 : len(numbers)]
+	fmt.Println(sNum)
+
 	playGame()
 }
